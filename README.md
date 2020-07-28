@@ -35,7 +35,7 @@ The predictions of both datasets could be obtained either by running prediction 
 Generally, the prediction should be done before evaluation, unless the predictions have been downloaded. Before running prediction, the aforementioned test images should be placed in the correct folder, and the *instruction.txt* should be deleted. <br/>
 If you want to run predictions yourself, you can run the following script: <br/>
 `python run.py dataset prediction` <br/>
-where *dataset* has two optional values, *potsdam* and *vaihingen*, on which dataset the prediction will be conducted. The predictions will be output in the ./result/*dataset*/ folder. <br/>
+where *dataset* has two optional values, *potsdam* and *vaihingen*, on which dataset the prediction will be conducted. The predictions will be output in the ./result/*dataset*/ folder. But notice that for each sample, this version of the prediction code uses strategies such as flipping, rotation, and overlapping sampling to process the input image patches. Therefore, the code running time will be longer.  <br/>
 If there are predictions on the corresponding folders, after the labels (boundaries eroded) have been placed correctly, and the *instruction.txt* has been removed from the label folder, we can test the accuracy of predictions by the following script:<br/>
 `python run.py dataset evaluation` <br/>
 where *dataset* has two optional values, *potsdam* and *vaihingen*, on which dataset the evaluation will be conducted. The statistics are recorded in the *.txt* file under the ./result/ folder.<br/>
