@@ -28,11 +28,9 @@ After downloading the models, extracting them to corresponding folders and delet
 ./result/vaihingen/     &#8195;   folder for the predictions of the Vaihingen dataset. <br/>
 ./result/               &#8195;   folder for the accuracy statistics for the two datasets. The statistics will be generated after running the evaluation code. <br>
 The predictions of both datasets could be obtained either by running prediction code or download form hyperlink.
+**Notice** : Remove all *instruction.txt* in folders before running.
 
 ---------
-**Notice** Remove all *instruction.txt* in folders before running.
----------
-
 ## Running code
 Generally, the prediction should be done before evaluation, unless the predictions have been downloaded. Before running prediction, the aforementioned test images should be placed in the correct folder, and the *instruction.txt* should be deleted. <br/>
 If you want to run predictions yourself, you can run the following script: <br/>
@@ -41,4 +39,4 @@ where *dataset* has two optional values, *potsdam* and *vaihingen*, on which dat
 If there are predictions on the corresponding folders, after the labels (boundaries eroded) have been placed correctly, and the *instruction.txt* has been removed from the label folder, we can test the accuracy of predictions by the following script:<br/>
 `python run.py dataset evaluation` <br/>
 where *dataset* has two optional values, *potsdam* and *vaihingen*, on which dataset the evaluation will be conducted. The statistics are recorded in the *.txt* file under the ./result/ folder.<br/>
-**Notice** The evaluation code is implemented in Python, but it is consistent with the results of the official test code released by ISPRS. You can also run the official test code to do an evaluation. Apart from OA and F1 calculated in the official test code, the IoU is calculated in our evaluation code. The code for IoU calculation refers to [ADE20k](https://github.com/CSAILVision/sceneparsing/tree/master/evaluationCode), and we have made some minor changes.
+**Notice** : The evaluation code is implemented in Python, but it is consistent with the results of the official test code released by ISPRS. You can also run the official test code to do an evaluation. Apart from OA and F1 calculated in the official test code, the IoU is calculated in our evaluation code. The code for IoU calculation refers to [ADE20k](https://github.com/CSAILVision/sceneparsing/tree/master/evaluationCode), and we have made some minor changes.
