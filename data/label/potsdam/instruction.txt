@@ -1,0 +1,3 @@
+1) download images and labels from http://www2.isprs.org/commissions/comm3/wg4/semantic-labeling.html
+2) Extract test labels (Boundaries eroded) of the Potsdam dataset from download file to this folder.
+3) remove this instruction.txt

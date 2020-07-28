@@ -1,0 +1,2 @@
+1) Download the trained model of Vaihingen dataset and place it in this folder.
+2) Remove the instruction.txt

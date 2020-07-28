@@ -1,0 +1,2 @@
+1) Download predictions of Vaihingen dataset and place it in this folder, or just run the run.py to obtain predictions.  
+2) Remove the instruction.txt
