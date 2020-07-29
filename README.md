@@ -21,6 +21,7 @@ After downloading the images and labels, extracting them to corresponding folder
 ---------
 ./model/potsdam/       &#8195;    folder for the trained model of the Potsdam dataset. <br/>
 ./model/vaihingen/     &#8195;    folder for the trained model of the Vaihingen dataset. <br/>
+you can download the trained models from [OneDrive](https://1drv.ms/u/s!ArZbL8yRkEMfh0HiEGHbLZQ-HVdD?e=HT0rnX) now. <br/>
 After downloading the models, extracting them to corresponding folders and delete the *instruction.txt* in the folder. <br/>
 
 ---------
